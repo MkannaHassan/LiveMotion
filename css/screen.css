@@ -2,7 +2,7 @@
 /*large laptop screen*/
 /*header*/ 
 html{
-    background-color: rgb(238, 255, 248);    
+    background-color: rgb(238, 252, 255);    
 }
 
 .container{
@@ -11,7 +11,7 @@ margin: 0 auto;
 }
 
 .header-area{  
-    background-image: linear-gradient(to right ,rgb(238, 255, 248), #00ffaa);
+    background-image: linear-gradient(to right ,rgb(238, 252, 255), #00b7ff);
 }
 
  .logo{
@@ -58,16 +58,18 @@ margin: 0 auto;
           
  }
  .navlist a:hover{ 
-    background-color: rgb(181, 255, 224);
+    background-color: rgb(238, 252, 255);
  }
  .menu-btn{
     float:right;
     margin:10px;
     border:1px solid white;
     padding:10px;
-    background-color :blue;
-    color:white;
-    
+    background-color :rgb(114, 172, 248);
+    color:white;    
+ }
+ .toggle-btn-visible{
+     display: none;
  }
 
 /* reveal and hide*/ 
@@ -117,7 +119,7 @@ footer{
      position: absolute;
      bottom: 0;
      left: 0;      
-     background-color: rgba(180, 219, 203,0.5);
+     background-color: rgba(180, 208, 219, 0.5);
      padding: 15px 15px;
      width: 100%;
      box-sizing: border-box; 
@@ -128,7 +130,7 @@ footer{
     color: rgb(65, 65, 65);
     font-size: 20px;
     text-align: center;
-    text-shadow: 1px 1px 0 #00ffaa;   
+    text-shadow: 1px 1px 0 #00b7ff;   
 }
 /*end of the image of the page*/
 
@@ -416,7 +418,7 @@ fieldset{
 /* about us*/
 .cycle-slideshow{
     position: relative;
-    background-image: linear-gradient(to right ,rgb(238, 255, 248), #00ffaa);
+    background-image: linear-gradient(to right ,rgb(238, 252, 255),  #00b7ff);
 
 
     
@@ -438,8 +440,8 @@ fieldset{
     position: absolute;
     top: 20px;
     margin: 10px 10px 50px 80px;
-    color  :#1417ee;
-    text-shadow: #00ffaa;
+    color  :#4a7191;
+    text-shadow:  #00b7ff;
     font-weight: 800;
     font-style: italic;
     font-size: 80px;
