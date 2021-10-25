@@ -2,7 +2,7 @@
 /*large laptop screen*/
 /*header*/ 
 html{
-    background-color: rgb(238, 252, 255);    
+    background-color: rgb(255, 255, 255);    
 }
 
 .container{
@@ -11,7 +11,7 @@ margin: 0 auto;
 }
 
 .header-area{  
-    background-image: linear-gradient(to right ,rgb(238, 252, 255), #00b7ff);
+    background-image: linear-gradient(to right ,rgb(255, 255, 255), #00b7ff);
 }
 
  .logo{
@@ -19,23 +19,24 @@ margin: 0 auto;
      padding-left: 5px;
      padding-top: 5px;
      padding-bottom: 2px;   
-     width: 40%;
+     width: 30%;
      float: left;
+     box-sizing: border-box;
      
  }
 
  .navigation{    
      padding: 5px;
-     width: 53%;
-     float: right;    
+     width: 70%;
+     float: right;  
+     box-sizing: border-box;  
  }
  
  .navlist{
-     margin-right: 7px ;
-     
+    margin-right: 7px ;
     float: right;
     list-style: none;
-    animation: shake 0.3s forwards 5;
+    
  }
  @keyframes shake{
     25%{
@@ -50,7 +51,7 @@ margin: 0 auto;
 }
 
  .navlist a{
-     text-decoration: none;
+    text-decoration: none;
      color: rgb(255, 255, 255);
      padding: 10px 20px;
      font-size: 150%;
@@ -58,7 +59,7 @@ margin: 0 auto;
           
  }
  .navlist a:hover{ 
-    background-color: rgb(238, 252, 255);
+    text-decoration: underline;
  }
  .menu-btn{
     float:right;
@@ -73,13 +74,17 @@ margin: 0 auto;
  }
 
 /* reveal and hide*/ 
-@media screen and (max-width : 600px){
+@media screen and (max-width : 768px){
 .toggle-btn{
     display:none;
 }
 
 .toggle-btn-visible{
     display:block;
+
+}
+.toggle-btn-visible .navlist a{
+    margin: 0;
 }
 .toggle-target-hidden{
     display:none;
@@ -322,9 +327,7 @@ fieldset{
  /* end of large laptop screen*/  
 /*medium laptop screen*/
 @media screen and (max-width: 992px) {
-    html{
-        background-color: rgb(203, 248, 166);    
-    }
+
      .navlist{
      margin-right: 7px ; 
     float:right;
@@ -332,16 +335,11 @@ fieldset{
     margin-bottom: 15px;}
     .navlist a{
         text-decoration: none;
-        color: rgb(255, 255, 255);
-        border: 2px solid whitesmoke;
+        color: rgb(255, 255, 255);  
         padding: 5px 10px;     
         
     }
-    .navlist a:hover{ 
-        background-color: #7c8078;
    
-   
-    }
     .cat-after,.cat-before,.dog-after,.dog-before{
         width: 370px;
         height: 370px;
@@ -350,14 +348,15 @@ fieldset{
 /*end medium tablet screen*/
 /*small tablet screen*/
 @media screen and (max-width:768px){
-    html{
-        background-color: rgb(188, 252, 252);    
-    }
+   
     .navlist{
-        margin-right: 7px ; 
-       float:left;
+        margin-right: 1px ; 
+        float: none;
        list-style: none;
-       margin-bottom: 15px;}
+       text-align: end;
+       margin-bottom: 15px;
+    }
+ 
 
 .cat-after,.cat-before,.dog-after,.dog-before{
     width: 270px;
@@ -379,9 +378,7 @@ fieldset{
 
 /*Xsmall phones*/
 @media screen and (max-width : 600px) {
-    html{
-        background-color: rgb(243, 252, 181);    
-    }
+    
     .navlist{
         margin:0 ;
         margin-left: 70px;
@@ -411,14 +408,14 @@ fieldset{
 @media screen and (max-width:768px){
 
 .col-xs-12{
-    width: 100%;
+    margin: 0;
 }
 }
 
 /* about us*/
 .cycle-slideshow{
     position: relative;
-    background-image: linear-gradient(to right ,rgb(238, 252, 255),  #00b7ff);
+    background-image: linear-gradient(to right ,rgb(255, 255, 255),  #00b7ff);
 
 
     
